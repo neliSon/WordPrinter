@@ -68,15 +68,39 @@
 			isa = PBXGroup;
 			children = (
 				1BA0051A1E77479700711537 /* main.m */,
+				1BA0052B1E77A56A00711537 /* Delegates */,
+				1BA0052C1E77A57D00711537 /* Delegator */,
+				1BA0052D1E77A58B00711537 /* Protocol */,
+			);
+			path = WordPrinter;
+			sourceTree = "<group>";
+		};
+		1BA0052B1E77A56A00711537 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
 				1BA005211E77484B00711537 /* Controller.h */,
 				1BA005221E77484B00711537 /* Controller.m */,
 				1BA005241E7748EE00711537 /* WonkyController.h */,
 				1BA005251E7748EE00711537 /* WonkyController.m */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		1BA0052C1E77A57D00711537 /* Delegator */ = {
+			isa = PBXGroup;
+			children = (
 				1BA005271E7798AE00711537 /* Printer.h */,
 				1BA005281E7798AE00711537 /* Printer.m */,
+			);
+			name = Delegator;
+			sourceTree = "<group>";
+		};
+		1BA0052D1E77A58B00711537 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
 				1BA0052A1E7798C200711537 /* PrinterDelegate.h */,
 			);
-			path = WordPrinter;
+			name = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
