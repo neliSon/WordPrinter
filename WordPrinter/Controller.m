@@ -33,4 +33,12 @@
     }
 }
 
+-(BOOL)printer:(Printer *)printer shouldMakeUpperCase:(NSString *)text {
+    if ([text hasSuffix:@"e"]) {
+        return YES;
+    } else {
+        return NO;
+    }
+}
+
 @end

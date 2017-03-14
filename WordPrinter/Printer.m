@@ -16,7 +16,7 @@
      */
     int n = [self.delegate printer:self numberOfTimesToPrint:text];
     for(int i = 0; i < n; i++) {
-        NSLog(@"%@", [self addStarTo:text]);
+        NSLog(@"%@", [self makeUpperCase:[self addStarTo:text]]);
     }
 }
 
@@ -25,6 +25,14 @@
         NSString *star = @"*";
         NSString *starredText = [[star stringByAppendingString:text] stringByAppendingString:star];
         return starredText;
+    } else {
+        return text;
+    }
+}
+
+-(NSString *)makeUpperCase:(NSString *)text {
+    if ([self.delegate printer:self shouldMakeUpperCase:text]) {
+        return [text uppercaseString];
     } else {
         return text;
     }

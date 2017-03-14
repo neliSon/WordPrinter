@@ -21,6 +21,6 @@
 
 @optional
 
-
+-(BOOL)printer:(Printer *)printer shouldMakeUpperCase:(NSString *) text;
 
 @end
