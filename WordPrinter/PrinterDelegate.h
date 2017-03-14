@@ -17,5 +17,10 @@
 @protocol PrinterDelegate <NSObject>
 
 -(int)printer:(Printer *)printer numberOfTimesToPrint:(NSString *) text;
+-(BOOL)printer:(Printer *)printer shouldAddStarTo:(NSString *) text;
+
+@optional
+
+
 
 @end

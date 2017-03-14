@@ -25,4 +25,12 @@
     }
 }
 
+-(BOOL)printer:(Printer *)printer shouldAddStarTo:(NSString *)text {
+    if ([text hasPrefix:@"H"]) {
+        return YES;
+    } else {
+        return NO;
+    }
+}
+
 @end

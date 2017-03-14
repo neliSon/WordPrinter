@@ -18,4 +18,8 @@
     return 10;
 }
 
+-(BOOL)printer:(Printer *)printer shouldAddStarTo:(NSString *)text {
+    return NO;
+}
+
 @end

@@ -16,7 +16,17 @@
      */
     int n = [self.delegate printer:self numberOfTimesToPrint:text];
     for(int i = 0; i < n; i++) {
-        NSLog(@"%@", text);
+        NSLog(@"%@", [self addStarTo:text]);
+    }
+}
+
+-(NSString *)addStarTo:(NSString *)text {
+    if ([self.delegate printer:self shouldAddStarTo:text]) {
+        NSString *star = @"*";
+        NSString *starredText = [[star stringByAppendingString:text] stringByAppendingString:star];
+        return starredText;
+    } else {
+        return text;
     }
 }
 
