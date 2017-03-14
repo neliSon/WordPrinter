@@ -7,11 +7,26 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Printer.h"
+#import "Controller.h"
+#import "WonkyController.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        
+        Printer *printer = [[Printer alloc] init];
+        Controller *controller = [[Controller alloc] init];
+        WonkyController *wonkController = [[WonkyController alloc] init];
+        
+        /*
+         STEP F: CONNECT YOUR DELEGATOR AND DELEGATE TOGETHER.
+         */
+        printer.delegate = controller;
+//        printer.delegate = wonkController;
+        
+        [printer printWord:@"Hey"];
+        [printer printWord:@"?Hey"];
+        [printer printWord:@"Another time"];
     }
     return 0;
 }

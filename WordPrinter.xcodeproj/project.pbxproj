@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1BA0051B1E77479700711537 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA0051A1E77479700711537 /* main.m */; };
+		1BA005231E77484B00711537 /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA005221E77484B00711537 /* Controller.m */; };
+		1BA005261E7748EE00711537 /* WonkyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA005251E7748EE00711537 /* WonkyController.m */; };
+		1BA005291E7798AE00711537 /* Printer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA005281E7798AE00711537 /* Printer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,13 @@
 /* Begin PBXFileReference section */
 		1BA005171E77479700711537 /* WordPrinter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WordPrinter; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BA0051A1E77479700711537 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1BA005211E77484B00711537 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
+		1BA005221E77484B00711537 /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
+		1BA005241E7748EE00711537 /* WonkyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WonkyController.h; sourceTree = "<group>"; };
+		1BA005251E7748EE00711537 /* WonkyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WonkyController.m; sourceTree = "<group>"; };
+		1BA005271E7798AE00711537 /* Printer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Printer.h; sourceTree = "<group>"; };
+		1BA005281E7798AE00711537 /* Printer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Printer.m; sourceTree = "<group>"; };
+		1BA0052A1E7798C200711537 /* PrinterDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrinterDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,13 @@
 			isa = PBXGroup;
 			children = (
 				1BA0051A1E77479700711537 /* main.m */,
+				1BA005211E77484B00711537 /* Controller.h */,
+				1BA005221E77484B00711537 /* Controller.m */,
+				1BA005241E7748EE00711537 /* WonkyController.h */,
+				1BA005251E7748EE00711537 /* WonkyController.m */,
+				1BA005271E7798AE00711537 /* Printer.h */,
+				1BA005281E7798AE00711537 /* Printer.m */,
+				1BA0052A1E7798C200711537 /* PrinterDelegate.h */,
 			);
 			path = WordPrinter;
 			sourceTree = "<group>";
@@ -120,7 +137,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BA005291E7798AE00711537 /* Printer.m in Sources */,
 				1BA0051B1E77479700711537 /* main.m in Sources */,
+				1BA005261E7748EE00711537 /* WonkyController.m in Sources */,
+				1BA005231E77484B00711537 /* Controller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
